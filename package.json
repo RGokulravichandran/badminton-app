@@ -1,0 +1,41 @@
+{
+  "name": "badminton-league-manager",
+  "version": "1.0.0",
+  "adonis-version": "4.1.0",
+  "description": "A full-stack application for managing badminton players, matches, and leaderboards",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "adonis serve --dev",
+    "setup": "npm install && adonis migration:run && adonis seed",
+    "reset": "adonis reset:database",
+    "test": "node ace test"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app",
+    "badminton",
+    "league",
+    "sports"
+  ],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "~2.0.9",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/session": "^1.0.27",
+    "@adonisjs/shield": "^1.0.8",
+    "pg": "^8.16.3",
+    "sqlite3": "^5.1.7"
+  },
+  "autoload": {
+    "App": "./app"
+  }
+}
